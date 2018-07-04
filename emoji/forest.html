@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-image: linear-gradient(#B3E5FC 20%, #efefef 55%, #AED581 55%)
+            flex-wrap: wrap;
+        }
+        .chain {
+            display: flex;
+            width: 100%;
+            font-size: 60px;
+            line-height: 35px;
+        }
+        .chain div {
+            width: 40px;
+        }
+        .js-container .chain:first-child {
+            margin-left: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper"><div class="js-container">
+        <div class="chain js-forest"></div></div>
+    </div>
+    <script>
+        for (var i = 0; i < 20; i++) {
+            var forestBlock = document.createElement("div");
+            forestBlock.innerHTML = "🌳";
+            var forestBlock2 = document.createElement("div");
+            forestBlock2.innerHTML = "🌳";
+            var pineBlock = document.createElement("div");
+            pineBlock.innerHTML = "🌲";
+            document.querySelector('.js-forest').appendChild(forestBlock);
+            document.querySelector('.js-forest').appendChild(forestBlock2);
+            document.querySelector('.js-forest').appendChild(pineBlock);
+        }
+        var secondRow = document.querySelector('.js-forest').cloneNode(true);
+        document.querySelector('.js-container').appendChild(secondRow);
+    </script>
+</body>
+
+</html>
