@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            border: 10px solid #ccf381;
+            height: 100vh;
+            box-sizing: border-box;
+            font-family: 'Anton', sans-serif;
+            color: #fff;
+            background-color: #4831d4;
+            text-shadow: 5px 5px #444;
+        }
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-size: 200px;
+        }
+
+       
+
+.line-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 50px;
+}
+
+.ellipse {
+    margin-left: -20px;
+    position: absolute;
+    background-image: radial-gradient(ellipse, transparent 7px, #ccf381 7px, #ccf381 11px, transparent 11px);
+    background-size: 36px 40px;
+    width: 100vw;
+    height: 20px;
+}
+
+.ellipse--offset {
+    top: 20px;
+    left: 18px; 
+    background-position: 0px -20px;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="line-wrapper">
+            <div class="ellipse"></div>
+            <div class="ellipse ellipse--offset"></div>
+    </div>
+</body>
+
+</html>
